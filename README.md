@@ -1,2 +1,5 @@
-# -sctech-trilha-desenvolvimento-de-software
- Introdução à Programação Front-End e Back-End - 20h . Este curso faz parte da "Carreira Tech", do programa SCTEC
+# 🚀 Carreira Tech — SCTECH  
+## Trilha: Desenvolvimento de Software
+
+Este repositório representa minha jornada principal na **Trilha de Desenvolvimento de Software da SCTECH**.
+re
