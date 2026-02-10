@@ -1,7 +1,8 @@
 # 🚀 Carreira Tech — SCTECH  
 ## Trilha: Desenvolvimento de Software
 
-Este repositório representa minha jornada principal na **Trilha de Desenvolvimento de Software da SCTECH**.
+Repositório dedicado aos meus estudos, exercícios e projetos desenvolvidos na trilha de Desenvolvimento de Software,  do programa SCTEC,
+uma iniciativa do Governo de Santa Catarina em parceria com o SENAI 
 
 ## 📌 Sobre o Programa
 
