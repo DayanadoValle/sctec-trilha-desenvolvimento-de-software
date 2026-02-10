@@ -5,4 +5,7 @@ Este repositório representa minha jornada principal na **Trilha de Desenvolvime
 
 ## 📌 Sobre o Programa
 
-O SCTECH é o maior programa estadual de qualificação tecnológica de Santa Catarina, oferecendo cursos gratuitos e online nas áreas de Desenvolvimento de Software, Análise de Dados e Inteligência Artificial.
+O **SCTEC** é o maior programa estadual de qualificação tecnológica de Santa Catarina, oferecendo cursos gratuitos nas áreas de **Desenvolvimento de Software, Análise de Dados e Inteligência Artificial**.
+
+Para mais informações, acesse o site oficial: [SCTEC](https://sctec.scti.sc.gov.br/)
+
