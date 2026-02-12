@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetShop Mimo & Cia</title>
+
+    <style>
+      /* RESET */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        padding-top: 50px;
+      }
+
+      /* ======================
+         NAV
+      ======================= */
+
+      nav {
+        width: 100%;
+        background: #ff69b4;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav-container {
+        width: 100%;
+        max-width: 900px;
+        padding: 15px 20px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+
+        padding: 8px 16px;
+        border-radius: 20px;
+
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      /* ======================
+         MENU HAMBURGUER
+      ======================= */
+
+      .menu-btn {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+      }
+
+      .menu-btn span {
+        width: 25px;
+        height: 3px;
+        background: white;
+        border-radius: 5px;
+      }
+
+      #menu-toggle {
+        display: none;
+      }
+
+      /* ======================
+         BANNER
+      ======================= */
+      .banner {
+        width: 100%;
+        min-height: 90vh;
+        max-height: 100vh;
+        background-image: url(https://i.postimg.cc/MTcXv9zZ/Chat-GPT-Image-Feb-11-2026-10-07-56-PM.png);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
+        overflow: hidden;
+      }
+
+      /* ======================
+         MAIN
+      ======================= */
+
+      main {
+        padding: 40px 20px;
+      }
+
+      section {
+        background: white;
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 30px;
+        border-radius: 20px;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      section h2 {
+        color: #ff69b4;
+        margin-bottom: 15px;
+      }
+
+      section p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+      }
+
+      /* ======================
+         FRASE FINAL
+      ======================= */
+
+      .frase-final {
+        background: transparent;
+        box-shadow: none;
+
+        text-align: center;
+        font-size: 1.2rem;
+        color: #555;
+        font-style: italic;
+        padding: 40px 20px;
+      }
+
+      /* ======================
+         FOOTER
+      ======================= */
+
+      footer {
+        background: #ff69b4;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+
+      /* ======================
+         RESPONSIVO
+      ======================= */
+
+      @media (max-width: 768px) {
+        nav ul {
+          position: absolute;
+          top: 70px;
+          left: 0;
+          width: 100%;
+
+          background: #ff69b4;
+
+          flex-direction: column;
+          align-items: center;
+
+          display: none;
+        }
+
+        nav ul li {
+          padding: 15px 0;
+        }
+
+        .menu-btn {
+          display: flex;
+        }
+
+        #menu-toggle:checked ~ ul {
+          display: flex;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .banner {
+          height: 50vh;
+          min-height: 200px;
+          background-image: url(https://i.postimg.cc/XqXV28sP/Chat-GPT-Image-Feb-11-2026-11-54-57-PM.png);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAV -->
+
+    <!-- BANNER -->
+
+    <header class="banner" id="inicio">
+      <nav>
+        <div class="nav-container">
+          <div class="logo">🐾 PetShop Mimo&Cia</div>
+
+          <input type="checkbox" id="menu-toggle" />
+
+          <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="banner-overlay"></div>
+    </header>
+
+    <!-- MAIN -->
+
+    <main>
+      <section id="sobre">
+        <h2>Conheça nossa história</h2>
+
+        <p>
+          Nossa loja iniciou em 2010, com um sonho simples: cuidar dos pets com
+          amor, respeito e responsabilidade.
+        </p>
+
+        <p>
+          Com o passar dos anos, crescemos e hoje oferecemos produtos e serviços
+          de qualidade para seu melhor amigo.
+        </p>
+      </section>
+
+      <section id="contato">
+        <h2>Contato</h2>
+
+        <p>
+          Email:
+          <br />
+          <a href="mailto:email@email.com">email@email.com</a>
+        </p>
+      </section>
+
+      <!-- FRASE FINAL -->
+
+      <section class="frase-final">
+        <p>"Aqui seu pet é tratado como parte da família 💖🐶🐱"</p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <p>Criado pela Trilha Dev do SCTec - 2026 💙</p>
+    </footer>
+  </body>
+</html>
