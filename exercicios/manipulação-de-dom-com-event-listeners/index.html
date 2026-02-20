@@ -5,39 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event exercicios</title>
+    <style src="./style.css"></style>
 
-    <style>
-      body {
-        font-family: Arial;
-        margin: 0;
-        padding: 20px;
-      }
-
-      /* CARD */
-      #card {
-        width: 150px;
-        height: 150px;
-        background: blue;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-      }
-
-      /* BOLINHA DO MAPA */
-      .ponto {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background: red;
-        opacity: 0.4;
-        pointer-events: none;
-        transform: translate(-50%, -50%);
-      }
-    </style>
-  </head>
+    </head>
 
   <body>
     <h1>
@@ -76,55 +46,6 @@
     </h3>
     <i> Sim 😌 Isso é base do que ferramentas como Hotjar fazem. </i>
 
-    <script>
-      // =========================
-      // MOUSE ENTER / LEAVE
-      // =========================
-
-      let card = document.getElementById("card");
-
-      card.addEventListener("mouseenter", function () {
-        card.style.background = "green";
-        card.innerText = "Mouse entrou";
-      });
-
-      card.addEventListener("mouseleave", function () {
-        card.style.background = "blue";
-        card.innerText = "Card 1";
-      });
-
-      // =========================
-      // DIGITAÇÃO EM TEMPO REAL
-      // =========================
-
-      let inputTempoReal = document.getElementById("inputTempoReal");
-      let saidaTempoReal = document.getElementById("saidaTempoReal");
-
-      inputTempoReal.addEventListener("input", function () {
-        saidaTempoReal.innerText = inputTempoReal.value;
-      });
-
-      // =========================
-      // CONTADOR + MAPA DE CALOR
-      // =========================
-
-      let contador = 0;
-      let contadorElemento = document.getElementById("contador");
-
-      document.addEventListener("click", function (event) {
-        // contador
-        contador++;
-        contadorElemento.innerText = contador;
-
-        // criar ponto no local EXATO considerando scroll
-        let ponto = document.createElement("div");
-        ponto.classList.add("ponto");
-
-        ponto.style.left = event.pageX + "px";
-        ponto.style.top = event.pageY + "px";
-
-        document.body.appendChild(ponto);
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>

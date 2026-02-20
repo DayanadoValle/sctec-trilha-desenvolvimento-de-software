@@ -1,0 +1,30 @@
+
+ body {
+        font-family: Arial;
+        margin: 0;
+        padding: 20px;
+      }
+
+      /* CARD */
+      #card {
+        width: 150px;
+        height: 150px;
+        background: blue;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      /* BOLINHA DO MAPA */
+      .ponto {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: red;
+        opacity: 0.4;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+      }
