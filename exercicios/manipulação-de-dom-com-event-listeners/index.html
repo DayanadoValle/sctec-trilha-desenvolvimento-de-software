@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event exercicios</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        margin: 0;
+        padding: 20px;
+      }
+
+      /* CARD */
+      #card {
+        width: 150px;
+        height: 150px;
+        background: blue;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      /* BOLINHA DO MAPA */
+      .ponto {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: red;
+        opacity: 0.4;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      📌 Manipulação de DOM com Event Listeners<br />
+      📌 Event-Driven Programming
+    </h1>
+    <hr />
+    <!-- ================= MOUSE ================= -->
+    <h2>Mouse Enter / Leave</h2>
+    <h3>👉 Mouse Events</h3>
+    <div id="card">Card 1</div>
+
+    <hr />
+
+    <!-- ================= DIGITAÇÃO ================= -->
+    <h2>Digite algo</h2>
+    <h3>👉 Input Event Handling</h3>
+
+    <input type="text" id="inputTempoReal" placeholder="Digite aqui..." />
+    <p>Você está digitando: <strong id="saidaTempoReal"></strong></p>
+
+    <hr />
+
+    <!-- ================= CONTADOR ================= -->
+    <h2>Contador de Cliques</h2>
+    <h3>👉 Click Event Handling</h3>
+
+    <p>Total de cliques na tela: <strong id="contador">0</strong></p>
+
+    <hr />
+
+    <h2>Mini Mapa de Calor (clique na tela)</h2>
+    <h3>
+      👉 Click Tracking <br />👉 User Interaction Tracking <br />👉 Heatmap
+      Simulation<br />
+    </h3>
+    <i> Sim 😌 Isso é base do que ferramentas como Hotjar fazem. </i>
+
+    <script>
+      // =========================
+      // MOUSE ENTER / LEAVE
+      // =========================
+
+      let card = document.getElementById("card");
+
+      card.addEventListener("mouseenter", function () {
+        card.style.background = "green";
+        card.innerText = "Mouse entrou";
+      });
+
+      card.addEventListener("mouseleave", function () {
+        card.style.background = "blue";
+        card.innerText = "Card 1";
+      });
+
+      // =========================
+      // DIGITAÇÃO EM TEMPO REAL
+      // =========================
+
+      let inputTempoReal = document.getElementById("inputTempoReal");
+      let saidaTempoReal = document.getElementById("saidaTempoReal");
+
+      inputTempoReal.addEventListener("input", function () {
+        saidaTempoReal.innerText = inputTempoReal.value;
+      });
+
+      // =========================
+      // CONTADOR + MAPA DE CALOR
+      // =========================
+
+      let contador = 0;
+      let contadorElemento = document.getElementById("contador");
+
+      document.addEventListener("click", function (event) {
+        // contador
+        contador++;
+        contadorElemento.innerText = contador;
+
+        // criar ponto no local EXATO considerando scroll
+        let ponto = document.createElement("div");
+        ponto.classList.add("ponto");
+
+        ponto.style.left = event.pageX + "px";
+        ponto.style.top = event.pageY + "px";
+
+        document.body.appendChild(ponto);
+      });
+    </script>
+  </body>
+</html>
