@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio profissional de Desenvolvedor Full Stack"
+    />
+    <title>DevPortfólio | Full Stack</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>/* =========================
+   VARIÁVEIS
+========================= */
+:root {
+  --color-bg: #0b1f36;
+  --color-bg-soft: #0b1220;
+  --color-card: #02;
+  --color-accent: #00c896;
+  --color-accent-light: #00e6ac;
+  --color-text: #ffffff;
+  --color-text-soft: #b5c7d3;
+  --color-border: #1e3a5f;
+  --radius: 12px;
+  --transition: 0.3s ease;
+}
+
+/* =========================
+RESET
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+section {
+  padding: 4rem 1.5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* =========================
+HEADER
+========================= */
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 1000;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header__logo {
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.header__toggle {
+  width: 30px;
+  height: 22px;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header__toggle-line {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: var(--color-text);
+  transition: var(--transition);
+}
+
+.header__toggle-line:nth-child(1) {
+  top: 0;
+}
+.header__toggle-line:nth-child(2) {
+  top: 9px;
+}
+.header__toggle-line:nth-child(3) {
+  bottom: 0;
+}
+
+.header__toggle--active .header__toggle-line:nth-child(1) {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.header__toggle--active .header__toggle-line:nth-child(2) {
+  opacity: 0;
+}
+
+.header__toggle--active .header__toggle-line:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 10px;
+}
+
+.header__nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--color-bg-soft);
+  max-height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.header__nav--open {
+  max-height: 300px;
+}
+
+.header__nav-list {
+  list-style: none;
+  padding: 1rem;
+}
+
+.header__nav-item {
+  margin-bottom: 1rem;
+}
+
+.header__link {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.header__link:hover {
+  color: var(--color-accent);
+}
+
+/* =========================
+HERO
+========================= */
+.hero {
+  text-align: center;
+  padding: 5rem 1.5rem;
+  background: linear-gradient(135deg, var(--color-bg), var(--color-bg-soft));
+}
+
+.hero__highlight {
+  color: var(--color-accent);
+}
+
+.hero__title {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin: 1rem 0;
+}
+
+.hero__buttons {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.button {
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-accent);
+  text-decoration: none;
+  transition: var(--transition);
+  background-color: aliceblue;
+  font-weight: 500;
+}
+
+.button--primary {
+  background: transparent;
+  color: var(--color-accent-light);
+}
+
+.button--primary:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* =========================
+GRID
+========================= */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid--2,
+.grid--3,
+.grid--4 {
+  grid-template-columns: 1fr;
+}
+
+/* =========================
+CARD
+========================= */
+.card {
+  background-color: var(--color-bg-soft);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  transition: var(--transition);
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.card--show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent);
+}
+
+.card__title {
+  margin-bottom: 0.5rem;
+}
+
+.card__text {
+  color: var(--color-text-soft);
+}
+
+.card__badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid var(--color-accent);
+  font-size: 0.8rem;
+  color: var(--color-accent);
+}
+
+.card__btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-accent);
+  text-decoration: none;
+  transition: var(--transition);
+  background: transparent;
+  color: var(--color-accent-light);
+  font-weight: 600;
+}
+
+.card__btn:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+/* =========================
+FOOTER
+========================= */
+.footer {
+  background-color: var(--color-bg-soft);
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-soft);
+}
+
+/* =========================
+RESPONSIVO
+========================= */
+@media (min-width: 768px) {
+  .header__toggle {
+    display: none;
+  }
+
+  .header__nav {
+    position: static;
+    max-height: none;
+    background: none;
+  }
+
+  .header__nav-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  .header__nav-item {
+    margin: 0;
+  }
+
+  .grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hero__buttons {
+    flex-direction: row;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove espaçamentos indesejados abaixo da imagem */
+}
+</style>
+  </head>
+
+  <body>
+    <!--palavra passe 20/02 5 aula desev,sof: do console ao deploy-->
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">&lt;DevPortfólio/&gt;</div>
+
+        <button
+          class="header__toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span class="header__toggle-line"></span>
+          <span class="header__toggle-line"></span>
+          <span class="header__toggle-line"></span>
+        </button>
+
+        <nav class="header__nav" id="menu">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#sobre" class="header__link">Sobre</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#projetos" class="header__link">Projetos</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#habilidades" class="header__link">Habilidades</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#contato" class="header__link">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="hero__highlight">Olá, eu sou</p>
+        <h1 class="hero__title">Desenvolvedor Full Stack</h1>
+        <p>
+          Criando experiências digitais através de código limpo e design moderno
+        </p>
+
+        <div class="hero__buttons">
+          <a href="#projetos" class="button button--primary">Ver Projetos</a>
+          <a href="#contato" class="button button--primary"
+            >Entrar em Contato</a
+          >
+        </div>
+      </section>
+
+      <section id="sobre" class="container">
+        <h2>Sobre Mim</h2>
+        <div class="grid grid--2">
+          <div class="card">
+            <p class="card__text">
+              Sou desenvolvedor apaixonado por tecnologia e inovação...
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Formação & Certificados</h3>
+            <p class="card__text">HTML, CSS e JavaScript</p>
+            <span class="card__badge">20h</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="container">
+        <h2>Projetos</h2>
+        <div class="grid grid--3">
+          <div class="card">
+            <img
+              src="https://www.tec4you.com.br/wp-content/uploads/2020/10/site-768x447.jpg"
+            />
+            <h3 class="card__title">E-commerce</h3>
+            <p class="card__text">Plataforma simples</p>
+            <button class="card__btn">Ver Projeto</button>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.tec4you.com.br/wp-content/uploads/2020/10/site-768x447.jpg"
+            />
+            <h3 class="card__title">Task Manager</h3>
+            <p class="card__text">Gerenciamento</p>
+            <button class="card__btn">Ver Projeto</button>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.tec4you.com.br/wp-content/uploads/2020/10/site-768x447.jpg"
+            />
+            <h3 class="card__title">Weather App</h3>
+            <p class="card__text">API de clima</p>
+            <button class="card__btn">Ver Projeto</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades" class="container">
+        <h2>Habilidades</h2>
+        <div class="grid grid--4">
+          <div class="card">HTML</div>
+          <div class="card">CSS</div>
+          <div class="card">JavaScript</div>
+          <div class="card">Git</div>
+        </div>
+      </section>
+
+      <section id="contato" class="container">
+        <h2>Contato</h2>
+        <div class="grid grid--3">
+          <div class="card">
+            <h3>Email</h3>
+            <p>dayanadovalle@hotmail.com</p>
+          </div>
+          <div class="card">
+            <h3>Telefone</h3>
+            <p>(48)98850-5587</p>
+          </div>
+
+          <div class="card">
+            <h3>Localização</h3>
+            <p>Grande Florianópolis - SC</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">© 2026 DevPortfólio</footer>
+
+    <script>
+      const toggle = document.querySelector(".header__toggle");
+      const nav = document.querySelector(".header__nav");
+      const cards = document.querySelectorAll(".card");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("header__nav--open");
+        toggle.classList.toggle("header__toggle--active");
+
+        const expanded = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", !expanded);
+      });
+
+      // Scroll Reveal
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("card--show");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      cards.forEach((card) => observer.observe(card));
+    </script>
+  </body>
+</html>
