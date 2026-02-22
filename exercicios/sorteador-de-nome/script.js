@@ -30,3 +30,5 @@ function adicionarNome() {
 
   console.log("Lista atual:", nomes);
 }
+
+console.log(nomes);
