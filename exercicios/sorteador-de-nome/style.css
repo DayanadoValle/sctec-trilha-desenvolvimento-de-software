@@ -1,0 +1,137 @@
+:root {
+  /* 🎨 Cores */
+  --color-primary: #ffd400;
+  --color-bg: #f4f4f4;
+  --color-card: #ffffff;
+  --color-text: #111;
+  --color-muted: #666;
+
+  /* 📐 Layout */
+  --radius: 20px;
+}
+
+/* 🔧 Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* 🧱 Estrutura Base */
+body {
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Área principal cresce */
+.app {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* 📦 Card padrão */
+.card {
+  background: var(--color-card);
+  padding: 2rem;
+  border-radius: var(--radius);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* 🏷 Título */
+.card__title {
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+/* 🧾 Form */
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.form__input {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+}
+
+/* 🔘 Botão padrão */
+.button {
+  background: var(--color-primary);
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button--full {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* 📋 Lista */
+.lista {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.lista li {
+  padding: 0.3rem 0;
+  color: var(--color-muted);
+}
+
+/* 🎉 Resultado */
+.resultado {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.footer {
+  margin-top: 3rem;
+  padding: 1.5rem 1rem;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.footer__content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer__text {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__link {
+  display: inline-flex;
+  align-items: center;
+  color: #ffd400;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 0.7rem;
+}
+
+.footer__link:hover {
+  opacity: 0.8;
+}
+
+.footer__link svg {
+  width: 20px;
+  height: 20px;
+}
