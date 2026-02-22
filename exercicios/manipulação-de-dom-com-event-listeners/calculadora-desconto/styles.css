@@ -1,0 +1,167 @@
+:root {
+  --color-primary: #ffd400;
+  --color-bg: #f4f4f4;
+  --color-card: #ffffff;
+  --color-text: #111;
+  --color-muted: #666;
+  --radius: 20px;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Layout */
+
+.calculator {
+  background: var(--color-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Highlight */
+
+.calculator__highlight {
+  background: var(--color-primary);
+  padding: 2rem;
+  text-align: center;
+}
+
+.calculator__highlight-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Content */
+
+.calculator__content {
+  padding: 2rem;
+}
+
+.calculator__title {
+  margin-bottom: 0.5rem;
+}
+
+.calculator__description {
+  color: var(--color-muted);
+  margin-bottom: 1.5rem;
+}
+
+/* Form */
+
+.form__group {
+  margin-bottom: 1rem;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+.form__input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form__button {
+  width: 100%;
+  padding: 0.9rem;
+  background: var(--color-primary);
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.form__button:hover {
+  opacity: 0.9;
+}
+
+.form__result {
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+  .calculator {
+    display: flex;
+  }
+
+  .calculator__highlight {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .calculator__content {
+    width: 60%;
+  }
+}
+
+/* ========================
+   FOOTER - PADRÃO SCTEC
+======================== */
+
+.footer {
+  margin-top: 3rem;
+  padding: 1.5rem 1rem;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.footer__content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer__text {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 0.7rem;
+}
+
+.footer__link:hover {
+  opacity: 0.8;
+}
+
+.footer__link svg {
+  width: 20px;
+  height: 20px;
+}
+.app {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
