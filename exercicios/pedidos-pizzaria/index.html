@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzaria - Pedido</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <header class="header">
+      <h1 class="header__title">🍕 Pizzaria da Day</h1>
+      <p class="header__subtitle">Digite o número do seu pedido</p>
+    </header>
+
+    <section class="menu">
+
+  <h2 class="menu__title">Nosso Cardápio</h2>
+
+  <div class="menu__grid">
+
+    <div class="menu__card"><span>1</span> 🍕 Calabresa</div>
+    <div class="menu__card"><span>2</span> 🧀 Quatro Queijos</div>
+    <div class="menu__card"><span>3</span> 🍗 Frango com Catupiry</div>
+    <div class="menu__card"><span>4</span> 🍫 Brigadeiro</div>
+    <div class="menu__card"><span>5</span> 🍖 Portuguesa</div>
+    <div class="menu__card"><span>6</span> 🥓 Bacon</div>
+    <div class="menu__card"><span>7</span> 🌽 Milho</div>
+    <div class="menu__card"><span>8</span> 🍅 Marguerita</div>
+    <div class="menu__card"><span>9</span> 🌶️ Calabresa Especial</div>
+    <div class="menu__card"><span>10</span> 🥩 Carne Seca</div>
+    <div class="menu__card"><span>11</span> 🧄 Alho e Óleo</div>
+    <div class="menu__card"><span>12</span> 🧅 Cebola Caramelizada</div>
+    <div class="menu__card"><span>13</span> 🫒 Azeitona Especial</div>
+    <div class="menu__card"><span>14</span> 🧀 Cheddar com Bacon</div>
+    <div class="menu__card"><span>15</span> 🍤 Camarão</div>
+    <div class="menu__card"><span>16</span> 🥦 Vegetariana</div>
+    <div class="menu__card"><span>17</span> 🌭 Hot Dog</div>
+    <div class="menu__card"><span>18</span> 🍍 Havaiana</div>
+    <div class="menu__card"><span>19</span> 🍫 Prestígio</div>
+    <div class="menu__card"><span>20</span> 🍓 Morango com Chocolate</div>
+
+  </div>
+
+</section>
+
+    <main class="main">
+
+      <div class="card">
+
+        <label for="pedido" class="card__label">
+          Número do Pedido (1 a 4)
+        </label>
+
+        <input 
+          type="number" 
+          id="pedido" 
+          class="card__input"
+          placeholder="Ex: 1"
+        >
+
+        <button id="btnPedido" class="button">
+          Fazer Pedido
+        </button>
+
+        <p id="resultado" class="card__result"></p>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

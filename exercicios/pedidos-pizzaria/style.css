@@ -1,0 +1,176 @@
+/* =========================
+   DESIGN SYSTEM
+========================= */
+
+:root {
+  --color-primary: #ffd400;
+  --color-dark: #111;
+  --color-light: #fff;
+  --color-gray: #f4f4f4;
+
+  --spacing-lg: 3rem;
+  --spacing-md: 1.5rem;
+  --radius: 12px;
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   LAYOUT BASE (MOBILE FIRST)
+========================= */
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--color-gray);
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  background: var(--color-primary);
+  padding: var(--spacing-lg) 1rem;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 1.8rem;
+}
+
+.header__subtitle {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-md);
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  background: var(--color-light);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius);
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card__label {
+  font-weight: 600;
+}
+
+.card__input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.card__result {
+  margin-top: var(--spacing-md);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+  margin-top: var(--spacing-md);
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--color-primary);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.03);
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+  padding: var(--spacing-lg) 1rem;
+  background: #fff;
+}
+
+.menu__title {
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+  font-size: 1.5rem;
+}
+
+.menu__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.menu__card {
+  background: var(--color-light);
+  border: 2px solid var(--color-primary);
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.menu__card span {
+  background: var(--color-primary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.menu__card:hover {
+  transform: scale(1.03);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (min-width: 768px) {
+  .menu__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
