@@ -32,12 +32,24 @@
 /* =========================
    BASE
 ========================= */
+html, body {
+  height: 100%;
+}
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: system-ui, sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.5;
+}
+
+
+
+/* Faz o conteúdo principal crescer */
+main {
+  flex: 1;
 }
 
 .container {
