@@ -1,0 +1,55 @@
+# 💰 Calculadora de Desconto
+
+Projeto desenvolvido na **Trilha de Desenvolvimento de Software (20h)** com foco em prática de lógica de programação e manipulação do DOM utilizando JavaScript puro.
+
+## 📌 Objetivo
+
+Implementar uma aplicação web capaz de calcular o valor final de um produto com base em uma porcentagem de desconto informada pelo usuário.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla JS)
+
+---
+
+## ⚙️ Funcionalidades
+
+- Captura de dados via formulário  
+- Validação de campos (valores numéricos e limites de desconto)  
+- Cálculo automático do valor final  
+- Manipulação dinâmica do DOM para exibição do resultado  
+- Estrutura de arquivos separada (HTML, CSS e JS)
+
+---
+
+## 🧠 Conceitos Aplicados
+
+- Estrutura semântica em HTML  
+- Eventos (`submit`, `input`)  
+- Manipulação do DOM  
+- Validação de dados  
+- Operações matemáticas em JavaScript  
+- Boas práticas de organização de código
+
+---
+
+## 📂 Estrutura do Projeto
+
+/calculadora-desconto
+│
+├── index.html
+├── styles.css
+└── script.js
+
+
+---
+
+## 🚀 Como Executar
+
+1. Clone o repositório:
+
+2. Abra o arquivo `index.html` no navegador.
