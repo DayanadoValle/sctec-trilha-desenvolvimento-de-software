@@ -1,8 +1,15 @@
-# 🌐 Portfólio Pessoal — Atividade Prática Extra  
+# 🌐 Portfólio  — Desafio Extra  
 ## Curso: Introdução à Programação Front-End e Back-End (IP 20h A)  
 ### Programa SCTEC — Carreira Tech  
 
-Este projeto foi desenvolvido como parte da **atividade prática extra** do curso de Introdução à Programação Front-End e Back-End, oferecido pelo programa **SCTEC** em parceria com o SENAI/SC.  
+### 📎 Repositórios Relacionados
+Este projeto faz parte da atividade prática extra do curso **Introdução à Programação Front-End e Back-End (IP 20h A)**, do programa SCTEC.
+
+👉 Repositório do desafio extra (portfólio):  
+[portfolio-sctec-dev-software](https://github.com/DayanadoValle/portfolio-sctec-dev-software)
+
+👉 Repositório geral da trilha de estudos (em construção, reúne exercícios, desafios e projetos desenvolvidos ao longo do curso):  
+[sctec-trilha-desenvolvimento-de-software](https://github.com/DayanadoValle/sctec-trilha-desenvolvimento-de-software)
 
 ---
 
@@ -51,7 +58,6 @@ O portfólio reúne diferentes tipos de projetos criados durante o curso, inclui
    - Não é necessário instalar dependências externas.
  	- O projeto funciona apenas com HTML, CSS e JavaScript puro.
 
-###  Acesse aqui o repositório completo aqui(#)
 ### 👉 Acesse aqui a versão publicada do site(#)
 
 ## 📑 Documentação
