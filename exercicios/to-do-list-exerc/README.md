@@ -71,7 +71,7 @@ Acesse a pasta do projeto.
 
 Abra o arquivo index.html no navegador.
 
-###👩‍💻 Autora
+
 
 Desenvolvido por Dayana do Valle
 Trilha SCTEC – Desenvolvimento de Software
