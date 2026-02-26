@@ -3,8 +3,7 @@
 Iniciativa do Governo do Estado de Santa Catarina em parceria com o SENAI  
 
 ## 🚀 Trilha de Desenvolvimento de Software  
-📝 **Projeto: Sorteador de Nomes**  
-
+📝 **Projeto: Sorteador de Nomes**  Extra
 ### 📌 Objetivo  
 Desenvolver uma aplicação web interativa que permite ao usuário adicionar nomes em uma lista e realizar sorteios aleatórios, exibindo o resultado dinamicamente na interface.  
 O projeto tem como finalidade aplicar conceitos de **JavaScript**, manipulação do **DOM**, arrays e eventos.
