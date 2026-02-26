@@ -38,6 +38,13 @@ O projeto foi desenvolvido durante uma live, aplicando conceitos de **HTML** e *
 
 ---
 
+### 🌐 Veja Aqui  
+👉 [Acesse o site do projeto](#)  
+
+---
+
+
+
 📝 **Projeto: DevPortfólio | Full Stack**  
 
 ### 📌 Objetivo  
@@ -74,6 +81,12 @@ O projeto tem como finalidade aplicar conceitos de **HTML, CSS e JavaScript**, c
 - Experiência do Usuário (**UX**)  
 
 ---
+
+### 🌐 Veja Aqui  
+👉 [Acesse o site do projeto](#)  
+
+---
+
 
 ### 👩‍💻 Autora  
 Desenvolvido por **Dayana do Valle**  
