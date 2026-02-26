@@ -33,12 +33,17 @@ O repositório está dividido em pastas que representam:
 - 🎲 **Sorteador de Nomes** – sorteio aleatório com exclusão de nomes já usados  
 - 🍕 **Pizzaria da Day** – simulação de pedidos com cardápio interativo  
 - 🐾 **PetShop Mimo & Cia** – site institucional feito em live  
-- 💻 **DevPortfólio Full Stack** – portfólio profissional responsivo  
+- 💻 **DevPortfólio Full Stack** – portfólio profissional responsivo
+
+###  ## 📎 Repositórios Relacionados
+
+
+👉 Repositório do desafio extra (portfólio):  
+[portfolio-sctec-dev-software](https://github.com/DayanadoValle/portfolio-sctec-dev-software)
 
 ## 👩‍💻 Autora  
 Desenvolvido por **Dayana do Valle**  
 - GitHub: [DayanadoValle](https://github.com/DayanadoValle)  
-- Portfólio: [Dayana do Valle](https://dayanadovalleportfolio2023.netlify.app/)  
 - LinkedIn: [Dayana do Valle](https://www.linkedin.com/in/dayana-do-valle/)  
 
 ---
