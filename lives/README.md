@@ -5,7 +5,7 @@ Iniciativa do Governo do Estado de Santa Catarina em parceria com o SENAI
 ## 🚀 LIVES - Trilha de Desenvolvimento de Software  
 
 
-📝 **Projeto: PetShop Mimo & Cia**  
+## 📝 Projeto: PetShop Mimo & Cia**  
 
 ### 📌 Objetivo  
 Criar uma página institucional para um petshop fictício, apresentando informações sobre a empresa, sua história e formas de contato.  
@@ -45,7 +45,7 @@ O projeto foi desenvolvido durante uma live, aplicando conceitos de **HTML** e *
 
 
 
-📝 **Projeto: DevPortfólio | Full Stack**  
+## 📝 **Projeto: DevPortfólio | Full Stack**  
 
 ### 📌 Objetivo  
 Desenvolver um portfólio profissional para apresentar projetos, habilidades e informações de contato de um desenvolvedor Full Stack.  
