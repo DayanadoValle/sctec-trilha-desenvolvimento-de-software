@@ -61,13 +61,6 @@ Experiência do Usuário (UX)
 
 ---
 
-## 📂 Estrutura do Projeto
-/todo-list-crud
-│
-├── index.html
-├── styles.css
-└── script.js
-
 ## 🚀 Como Executar
 
 Clone o repositório:
