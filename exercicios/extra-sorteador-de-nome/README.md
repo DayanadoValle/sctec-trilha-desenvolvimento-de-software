@@ -1,0 +1,51 @@
+# 📖 Programa SCTEC – Santa Catarina Tecnologia e Inovação  
+
+Iniciativa do Governo do Estado de Santa Catarina em parceria com o SENAI  
+
+## 🚀 Trilha de Desenvolvimento de Software  
+📝 **Projeto: Sorteador de Nomes**  
+
+### 📌 Objetivo  
+Desenvolver uma aplicação web interativa que permite ao usuário adicionar nomes em uma lista e realizar sorteios aleatórios, exibindo o resultado dinamicamente na interface.  
+O projeto tem como finalidade aplicar conceitos de **JavaScript**, manipulação do **DOM**, arrays e eventos.
+
+---
+
+### 🛠️ Tecnologias Utilizadas  
+- **HTML5**  
+- **CSS3**  
+- **JavaScript (Vanilla JS)**  
+
+---
+
+### ⚙️ Funcionalidades  
+- Adicionar nomes à lista  
+- Exibir lista de nomes cadastrados  
+- Sortear nome aleatoriamente  
+- Remover nomes já sorteados da lista  
+- Mensagem de aviso quando todos os nomes já foram sorteados  
+- Interface responsiva e estilizada com variáveis CSS  
+- Footer com links para **GitHub** e **LinkedIn**  
+
+---
+
+### 🧠 Conceitos Aplicados  
+- Estruturação semântica com **HTML5**  
+- Manipulação do **DOM**  
+- Arrays e métodos (`push`, `splice`, `Math.random`)  
+- Eventos (`click`)  
+- Funções reutilizáveis  
+- Separação de responsabilidades (**HTML, CSS e JS**)  
+- Experiência do Usuário (**UX**)  
+
+---
+
+
+---
+
+### 👩‍💻 Autora  
+Desenvolvido por **Dayana do Valle**  
+Trilha SCTEC – Desenvolvimento de Software  
+
+- GitHub: [DayanadoValle](https://github.com/DayanadoValle)  
+- LinkedIn: [Dayana do Valle](https://www.linkedin.com/in/dayana-do-valle/)  
