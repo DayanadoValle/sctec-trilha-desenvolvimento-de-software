@@ -51,9 +51,12 @@ Desenvolver uma aplicação web capaz de calcular o valor final de um produto co
 ├── styles.css  
 └── script.js  
 
-## 🚀 Como Executar
+### 👩‍💻 Autora  
+Desenvolvido por **Dayana do Valle**  
+Trilha SCTEC – Desenvolvimento de Software  
 
-git clone <url-do-repositorio>
-2. Abra o arquivo `index.html` no navegador.
+- GitHub: [DayanadoValle](https://github.com/DayanadoValle)  
+- LinkedIn: [Dayana do Valle](https://www.linkedin.com/in/dayana-do-valle/)
+
 
 
