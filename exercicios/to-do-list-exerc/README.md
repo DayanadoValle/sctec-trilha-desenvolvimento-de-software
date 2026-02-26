@@ -61,17 +61,6 @@ Experiência do Usuário (UX)
 
 ---
 
-## 🚀 Como Executar
-
-Clone o repositório:
-
-git clone https://github.com/DayanadoValle/nome-do-repositorio.git
-
-Acesse a pasta do projeto.
-
-Abra o arquivo index.html no navegador.
-
-
 
 Desenvolvido por Dayana do Valle
 Trilha SCTEC – Desenvolvimento de Software
