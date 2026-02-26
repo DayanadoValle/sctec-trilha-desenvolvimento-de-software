@@ -7,7 +7,7 @@ Iniciativa do Governo do Estado de Santa Catarina em parceria com o SENAI
 
 ### 📌 Objetivo  
 Desenvolver uma aplicação web interativa que exibe saudações em diferentes idiomas, permitindo ao usuário selecionar a língua desejada em um menu e visualizar a mensagem correspondente.  
-O projeto tem como finalidade aplicar conceitos fundamentais de **JavaScript**, manipulação do **DOM** e organização de interface utilizando um **Design System personalizado** com foco em acessibilidade e responsividade.  
+O projeto tem como finalidade aplicar conceitos fundamentais de **JavaScript* e manipulação do **DOM** .
 
 ---
 
