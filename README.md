@@ -31,9 +31,6 @@ O repositório está dividido em pastas que representam:
 - 📝 **CRUD To-Do List** – lista de tarefas com adicionar, editar e excluir  
 - 🌍 **Saudação por Idioma** – mensagens dinâmicas em diferentes línguas  
 - 🎲 **Sorteador de Nomes** – sorteio aleatório com exclusão de nomes já usados  
-- 🍕 **Pizzaria da Day** – simulação de pedidos com cardápio interativo  
-- 🐾 **PetShop Mimo & Cia** – site institucional feito em live  
-- 💻 **DevPortfólio Full Stack** – portfólio profissional responsivo
 
 ###  ## 📎 Repositórios Relacionados
 
