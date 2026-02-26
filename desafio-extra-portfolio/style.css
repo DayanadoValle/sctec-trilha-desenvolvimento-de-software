@@ -1,4 +1,3 @@
-
 :root {
   --azul: #24b3c0;
   --cinza: #f0f0f0;
@@ -12,16 +11,14 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background: var(--cinza);
   line-height: 1.6;
   color: #555454;
-  
 }
 
-
- p {
-  font-family: 'Poppins', sans-serif;
+p {
+  font-family: "Poppins", sans-serif;
   font-size: 1em;
 }
 
@@ -88,7 +85,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   display: none;
   z-index: 999;
 }
@@ -97,14 +94,13 @@ header {
   display: block;
 }
 
-
 .social a {
   transition: 0.3s ease;
 }
 
 .social a:hover {
   transform: scale(1.15);
-  filter: drop-shadow(0 0 6px rgba(255,255,255,0.6));
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
 }
 
 /* SOBRE */
@@ -125,11 +121,10 @@ header {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* PROJETOS */
-
 
 .projetos {
   padding: 40px 20px;
@@ -156,7 +151,7 @@ header {
 
 .projeto:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .projeto img {
@@ -168,14 +163,12 @@ header {
 /* DESKTOP */
 
 @media (min-width: 768px) {
-
   .sobre-container {
     display: flex;
     align-items: center;
     gap: 40px;
     text-align: left;
   }
-  
 
   .sobre p {
     text-align: left;
@@ -222,12 +215,6 @@ footer {
   transform: translateY(0);
 }
 
-
-
-
-
-
-
 @keyframes rotateCard {
   0% {
     transform: rotateY(0deg);
@@ -245,4 +232,23 @@ footer {
 
 .card {
   animation: rotateCard 6s ease-in-out infinite;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.button--primary {
+  background-color: var(--azul);
+  color: #fcfcfc;
+}
+
+.button--primary:hover {
+  opacity: 0.85;
 }
