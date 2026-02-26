@@ -12,7 +12,7 @@ Para mais informações, acesse o site oficial: [SCTEC](https://sctec.scti.sc.go
 
 # 📚 Portfólio de Projetos – Curso de Desenvolvimento de Software  
 
-Este repositório reúne todos os projetos desenvolvidos durante minha jornada de aprendizado na trilha **Desenvolvimento de Software**[20h], incluindo exercícios práticos, desafios e projetos realizados em **lives**.  
+Este repositório reúne todos os projetos desenvolvidos durante minha jornada de aprendizado na trilha **Desenvolvimento de Software**[20h], incluindo exercícios práticos, desafios e projetos realizados em **lives**.  [ em construçao]
 
 
 ## 🛠️ Tecnologias Utilizadas  
