@@ -5,7 +5,7 @@ Iniciativa do Governo do Estado de Santa Catarina em parceria com o SENAI
 ## 🚀 LIVES - Trilha de Desenvolvimento de Software  
 
 
-## 📝** Projeto: PetShop Mimo & Cia**  dia 3
+## 📝Projeto: PetShop Mimo & Cia - dia 3
 
 ### 📌 Objetivo  
 Criar uma página institucional para um petshop fictício, apresentando informações sobre a empresa, sua história e formas de contato.  
